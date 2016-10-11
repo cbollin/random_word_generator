@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"/>
+         <link rel="stylesheet" href="~/css/style.css"/>
+         <title>Random Word</title>
+    </head>
+    <body>
+        <center>
+            <p>Random Word #@ViewBag.count</p>
+            <h1>@ViewBag.finalString</h1>
+            <form action="/generate" method="post">
+                <input name="randomButton" type="submit" value="Generate"/>
+            </form>
+
+        </center>
+    </body>
+</html>
